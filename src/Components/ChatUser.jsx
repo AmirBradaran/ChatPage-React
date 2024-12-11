@@ -6,7 +6,7 @@ import FooterUser from "./FooterUser";
 export default function ChatUser() {
   const [userName, setUserName] = useState("User 1");
   return (
-    <div>
+    <div className="chatUser">
       <HeaderUser userName={userName} />
       <BodyUser />
       <FooterUser />

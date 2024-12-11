@@ -3,7 +3,7 @@ import ChatUser from "./Components/ChatUser";
 
 export default function App() {
   return (
-    <div>
+    <div className="general">
       <ChatUser/>
     </div>
   );
