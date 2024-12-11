@@ -9,24 +9,34 @@ export default function ChatUser() {
     {
       Text: "Hello Mr.JJ",
       Time: "11:00 AM",
-      Type: "received"
+      Type: "received",
     },
     {
       Text: "Hello Doctor",
       Time: "11:30 AM",
-      Type: "sent"
+      Type: "sent",
     },
     {
       Text: "How are you ?",
       Time: "12:00 PM",
-      Type: "received"
-    }
+      Type: "received",
+    },
   ]);
+  const handleMessage = (Text) => {
+    setChatBody([
+      ...chatBody,
+      {
+        Text: Text,
+        Time: new Date().toLocaleTimeString(),
+        Type: "sent",
+      },
+    ]);
+  };
   return (
     <div className="chatUser">
       <HeaderUser userName={userName} />
       <BodyUser chatBody={chatBody} />
-      <FooterUser />
+      <FooterUser handleMessage={handleMessage} />
     </div>
   );
 }
