@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function FormOfMessage() {
+export default function FormOfMessage({ Text, Time, Type }) {
   return (
-    <div>
-      
+    <div className={`Message ${Type}`}>
+      {Text}
+      <br />
+      <time> {Time} </time>
     </div>
-  )
+  );
 }
