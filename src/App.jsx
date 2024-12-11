@@ -4,7 +4,7 @@ import ChatUser from "./Components/ChatUser";
 export default function App() {
   return (
     <div className="general">
-      <ChatUser/>
+      <ChatUser />
     </div>
   );
 }

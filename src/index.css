@@ -13,6 +13,7 @@
 .chatUser {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .header {
   background: linear-gradient(to right, #0d101a, #320e1a);
@@ -52,4 +53,34 @@ time {
 }
 .received time {
   float: right;
+}
+.footer {
+  display: flex;
+  padding: 15px;
+  margin-top: auto;
+}
+
+.footer input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.footer button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background-color: #652148;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #ac4057;
+}
+.footer button:disabled {
+  opacity: 0.7;
 }

@@ -8,7 +8,7 @@ export default function FooterUser({ handleMessage }) {
     setInp("");
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="footer">
       <input
         type="text"
         placeholder="Type a message ..."
